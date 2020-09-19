@@ -1,0 +1,82 @@
+<html>
+<head>
+<style>
+tr{
+	border: 13px red dashed;
+
+	padding:20px;
+}
+.enclosed{
+	border: 3px green dashed;
+
+	width:200px;
+
+	height:250px;
+
+	font-weight:bold;
+
+	font-size:20px;
+
+	padding:10px;
+
+	font-family:arial;
+
+	vertical-align: text-top;
+}
+</style>
+</head>
+<body>
+<img id='back' src= 'http://gobongo3.net//information/24065/general.jpg' style='height:100px;cursor:pointer;'onclick = 'history.go(-1)'>
+
+<h3 id='title'> General Store</h3>
+<span id='menu' style='color:green;font-weight:bold;'>Laboratory ...</span>
+
+<br><br>
+<table id='labs'>
+	<tr id='row-0'>
+    <td id='lab-0' class=enclosed>
+    <span id='title-0'>PAGE COLOR</span>
+    <select id='color' onchange="document.body.style.backgroundColor = this.value;
+    document.getElementById('clock').style.backgroundColor = this.value;">
+    <option value="">Select a color</option>
+    <option value="red">red</option>
+    <option value="green">green</option>
+    <option value="orange">orange</option>
+    <option value="blue">blue</option>
+    <option value="pink">pink</option>
+    <option value="white">white</option>
+    </select>
+    </td>
+    <td id='lab-1' class=enclosed>
+    <span id='title-1'>CLOCK</span>
+	<button id='hide'onclick="document.getElementById('clock').style.display = 'none';">HIDE</button>
+    <button id='show'onclick="document.getElementById('clock').style.display = 'block';">SHOW<button>
+    <canvas id="clock" style="display:block;background-color:white;" width="200" height="200"></canvas>
+    <script src='assets/analog clock.js'></script>
+    </td>
+    </tr>
+    
+</body>
+</html>
+
+
+vertical-align: text-top;
+
+
+}
+
+ 
+</tr>
+</style>
+
+</head>
+
+ <table id='labs'>
+<td>
+</td>
+</table>
+
+<script src='http://www.gobongo3.net/src/347/13331/collect-laboratory page-4.js'></script>
+
+</body>
+</html>

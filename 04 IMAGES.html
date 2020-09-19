@@ -1,0 +1,39 @@
+<html>
+<body>
+<span id='title'>IMAGES</span>
+<br></br>
+
+<img id='pic-0'class='picture'style= 'display:block;height:180px;'src='http://gobongo3.net/information/24065/images/marigold.jpg'>
+
+<img id='pic-1'class='picture'style= 'display:none;height:180px;'src='http://gobongo3.net/information/24065/images/rose.jpg'>
+
+<img id='pic-2'class='picture'style= 'display:none;height:180px;'src='http://gobongo3.net/information/24065/images/tulip.jpg'>
+
+<br></br>
+
+<button id='button-0' onclick='selectPic(0)'>0</button>
+
+<button id='button-1' onclick='selectPic(1)'>1</button>
+
+<button id='button-2' onclick='selectPic(2)'>2</button>
+
+<script>
+function selectPic(picSelected){
+pictures= document.getElementsByClassName('picture');
+for (i=0; i< pictures.length; i++) {
+pictures[i].style.display='none';
+};
+
+key='pic-'+ picSelected;
+document.getElementById(key).style.display='block';
+
+};
+</script>
+<script src='http://www.gobongo3.net/src/347/13331/collect-images-5.js'></script>
+
+
+
+
+</body>
+</html>
+

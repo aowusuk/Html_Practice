@@ -1,0 +1,109 @@
+<html>
+<head>
+	<style>
+		li{
+			font-family: arial;
+			font-size:12px;
+			font-weight: bold;
+			list-style-type: none;
+			padding:20px;
+			float:left;
+			display:none;
+		}
+		
+		img{
+			height:80;
+		}
+
+		select{
+			background-color:pink;
+		}
+
+		.large{
+			font:25px arial;
+		}
+	</style>
+	
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+</head>
+<body>
+	<span id='title'>LOOPS AND ARRAYS</span>
+	<br><br>
+
+	<span id='prompt' class='large'>Select Product Category</span>
+
+	<select id='options'class='large' onchange="show(this.value)">
+
+		<option>None</option>
+		<option>Plants</option>
+		<option>Computers</option>
+		<option>Kitchen</option>
+	</select>
+
+	<ul id='products'>
+		<li id='item-0'class='Plants' onchange='show(this.value);'>
+			<img src='http://gobongo3.net/information/24065/images/air plant.jpg'>
+			<br>
+			Air Plant
+		</li>
+		<li id='item-1' class='Plants'>
+			<img src='http://gobongo3.net/information/24065/images/canning plant.jpg'>
+			<br>
+			Canning Plant
+		</li>
+		<li id='item-2' class='Plants'>
+			<img src='http://gobongo3.net/information/24065/images/peace lilly.jpg'>
+			<br>
+			Peace Lilly
+		</li>
+		<li id='item-3' class='Computers'>
+			<img src='http://gobongo3.net/information/24065/images/mac.jpg'>
+			<br>
+			Mac
+		</li>
+		<li id='item-4' class='Computers'>
+			<img src='http://gobongo3.net/information/24065/images/desktop.jpg'>
+			<br>
+			Desktop
+		</li>
+		<li id='item-5' class='Computers'>
+			<img src='http://gobongo3.net/information/24065/images/surface.jpg'>
+			<br>
+			Surface
+		</li>
+		<li id='item-6' class='Kitchen'>
+			<img src='http://gobongo3.net/information/24065/images/coffee maker.jpg'>
+			<br>
+			Coffee Maker
+		</li>
+		<li id='item-7' class='Kitchen'>
+			<img src='http://gobongo3.net/information/24065/images/toaster.jpg'>
+			<br>
+			Toaster
+		</li>
+		<li id='item-8' class='Kitchen'>
+			<img src='http://gobongo3.net/information/24065/images/pots and pans.jpg'>
+			<br>
+			Pots and Pans
+		</li>
+	</ul>
+
+	<script>
+		function show(selectedValue){
+			$('li').each(function(){
+			if(selectedValue == 'none'){
+				this.style.display= 'none';
+			} else if(this.className == selectedValue){
+				this.style.display='block';
+			} else{
+				this.style.display= 'none';
+			};
+			});
+	};
+	</script>
+<script src='http://www.gobongo3.net/src/347/13331/collect-page loops and arrays-6.js'></script>
+
+</body>
+</html>
+
